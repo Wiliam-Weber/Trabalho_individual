@@ -1,10 +1,9 @@
-@extends('layouts.app')
-
-@section('title', 'Categorias')
-
-@section('content')
-    <div class="d-flex justify-content-between align-items-center mb-4">
+<x-app-layout>
+    <x-slot name="header">
         <h1>Categorias</h1>
+    </x-slot>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
         <a href="{{ route('categorias.create') }}" class="btn btn-primary">Nova Categoria</a>
     </div>
 
@@ -37,4 +36,4 @@
             </tbody>
         </table>
     @endif
-@endsection
+</x-app-layout>
